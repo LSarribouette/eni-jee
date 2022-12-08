@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Application de démonstration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/4-col-portfolio.css" rel="stylesheet">
+    
+    <!-- Google code prettify -->
+	<link rel="stylesheet" type="text/css" href="../../../vendor/google-code-prettify/prettify.css">
+	
+  </head>
+
+  <body onload="PR.prettyPrint()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../module.html">Application de démonstration - Module 11</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Correction TP
+        <small>Mise en place d'un template</small>
+      </h1>
+	
+	<h2>Affichage de la page</h2>
+	<p>
+		Le lien suivant pointe vers le ficher 
+		<a href="AnnuaireDeMesApplications.html">AnnuaireDeMesApplications.html</a>.
+	</p>
+	
+	<p>Voici le code du fichier html :</p>
+		
+	 <pre class="prettyprint">
+	 	<code class="language-html">
+	 	<!-- debut du code html a afficher (avec les < remplaces par l equivalent html &lt;) -->
+			&lt;!DOCTYPE html>
+			&lt;html>
+			&lt;head>
+			&lt;meta charset="UTF-8">
+			&lt;title>Annuaire de mes applications&lt;/title>
+			&lt;link rel="stylesheet" href="Style.css" />
+			&lt;/head>
+			
+			&lt;body>
+				&lt;header>
+					&lt;div class="divMenu">
+						&lt;a href="" class="button">Accueil&lt;/a> &lt;a href="" class="button">Mes applications&lt;/a>
+					&lt;/div>
+				&lt;/header>
+			
+				&lt;div class="divTitre">
+					&lt;h1>Mes Applications&lt;/h1>
+				&lt;/div>
+			
+				&lt;div class="divBox">
+					&lt;div class="box">
+						&lt;a href="" class="button2">Ma première application&lt;/a>
+					&lt;/div>
+					&lt;div class="box">
+						&lt;a href="" class="button2">Ma seconde application&lt;/a>
+					&lt;/div>
+					&lt;div class="box">
+						&lt;a href="" class="button2">Ma troisième application&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			
+				&lt;footer>
+					&lt;p>
+						Copyright - &lt;strong>MNASRI&lt;/strong> - 2022
+					&lt;/p>
+				&lt;/footer>
+			&lt;/body>
+			&lt;/html>
+		<!--  fin du code html a afficher -->
+		</code>
+	 </pre>
+    
+	<h2>Style appliqué à la page</h2>
+	<p>
+		Le lien suivant pointe vers la feuille de style liée au fichier html 
+		<a href="Style.css">Style.css</a>.
+	</p>
+	
+	<p>Voici le code de la feuille de style :</p>
+		
+	 <pre class="prettyprint">
+	 	<code class="language-css">
+	 	<!-- debut du code html a afficher (avec les < remplaces par l equivalent html &lt;) -->
+			@charset "UTF-8";
+			
+			body {
+				font-family: Comic Sans MS;
+				font-size: 1.2em;
+			}
+			
+			footer {
+			position:absolute;
+			bottom:0;  /* on le colle en bas */
+			width:100%;
+			height:100px;
+			text-align: center;
+			}
+			
+			.divMenu {
+				border-bottom: solid;
+				padding: 10px;
+			}
+			
+			.divTitre {
+				border: none;
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50em;
+				height: 6em;
+			}
+			
+			h1 {
+				text-align: center;
+				font-weight: normal;
+			}
+			
+			.button {
+				color: black;
+				text-decoration: none;
+				padding: 2px 20px;
+				font-weight: normal;
+			}
+			
+			.button2 {
+				color: black; border : solid;
+				border-color: black;	
+				text-decoration: none;
+				text-align: center;
+				cursor: pointer;
+				padding: 20px 34px;
+				display: inline-block;
+				margin: 4px 20px;
+				border-radius: 20px;
+				border: solid;
+			}
+			
+			.divBox {
+				display: flex;
+				justify-content: center;
+			}
+			 	
+    	<!--  fin du code html a afficher -->
+		</code>
+	 </pre>
+	 
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark footer-demodule">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; SARRIBOUETTE 2022</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 	<!-- Google code prettify -->
+	<script type="text/javascript" src="../../../vendor/google-code-prettify/prettify.js"></script>
+
+  </body>
+
+</html>
